@@ -1,5 +1,6 @@
 --docker run -p 5432:5432 --name author-pg -e POSTGRES_PASSWORD=test -e POSTGRES_USER=author -e POSTGRES_DB=authors -d postgres
 --docker run --name mypgadmin -p 5050:80 -e "PGADMIN_DEFAULT_EMAIL=test@google.com" -e "PGADMIN_DEFAULT_PASSWORD=111" -d dpage/pgadmin4
+-- docker run --name pgadmin -p 5000:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' -e 'PGADMIN_DEFAULT_PASSWORD=111' -d dpage/pgadmin4
 --or
 --docker exec -i authors-pg bash
 --psql -U author authors
